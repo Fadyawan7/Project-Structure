@@ -1,5 +1,5 @@
 // packages
-import 'package:country_picker/country_picker.dart';
+// import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:flutter_template/core/shared/themes/app_colors.dart';
@@ -159,26 +159,26 @@ class _LoginViewState extends State<LoginView>
             // Country Code Picker
             GestureDetector(
               onTap: () {
-                showCountryPicker(
-                  context: context,
-                  showPhoneCode: true,
-                  useSafeArea: true,
+                // showCountryPicker(
+                //   context: context,
+                //   showPhoneCode: true,
+                //   useSafeArea: true,
 
-                  countryListTheme: CountryListThemeData(
-                    borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(10),
-                    ),
+                //   countryListTheme: CountryListThemeData(
+                //     borderRadius: const BorderRadius.only(
+                //       topLeft: Radius.circular(10),
+                //     ),
 
-                    inputDecoration: InputDecoration(
-                      hintText: 'Start typing to search',
-                      labelText: 'Search',
-                    ),
-                  ),
-                  favorite: ['PK'],
-                  onSelect: (Country value) {
-                    // phoneController.setCountry(value);
-                  },
-                );
+                //     inputDecoration: InputDecoration(
+                //       hintText: 'Start typing to search',
+                //       labelText: 'Search',
+                //     ),
+                //   ),
+                //   favorite: ['PK'],
+                //   onSelect: (Country value) {
+                //     // phoneController.setCountry(value);
+                //   },
+                // );
               },
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.26,

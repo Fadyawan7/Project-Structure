@@ -1,6 +1,6 @@
 // Removed dart:io import for web compatibility
 import 'package:flutter_template/core/shared/utils/app_logger.dart';
-import 'package:flutter_template/core/shared/utils/uuid.dart';
+// import 'package:flutter_template/core/shared/utils/uuid.dart';
 import 'package:flutter_template/core/shared/utils/platform_utils.dart';
 import 'package:client_information/client_information.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -102,20 +102,20 @@ class SecureStorageHelper {
     }
   }
 
-  static Future<String> getUniqueId() async {
-    String? storedId = await getByKey(key: SecureStorageKey.uniqueId);
-    if (storedId == null) {
-      if (PlatformUtils.isIOS) {
-        storedId = generateUniqueId();
-      } else {
-        final info = await ClientInformation.fetch();
-        storedId = info.deviceId;
-      }
-      await setByKey(key: SecureStorageKey.uniqueId, value: storedId);
-    }
-    AppLogger.d("Unique ID $storedId");
-    return storedId;
-  }
+  // static Future<String> getUniqueId() async {
+  //   String? storedId = await getByKey(key: SecureStorageKey.uniqueId);
+  //   if (storedId == null) {
+  //     if (PlatformUtils.isIOS) {
+  //       storedId = generateUniqueId();
+  //     } else {
+  //       final info = await ClientInformation.fetch();
+  //       storedId = info.deviceId;
+  //     }
+  //     await setByKey(key: SecureStorageKey.uniqueId, value: storedId);
+  //   }
+  //   AppLogger.d("Unique ID $storedId");
+  //   return storedId;
+  // }
 
   static Future<dynamic> setOAuthToken({required String accessToken}) async {
     return setByKey(key: SecureStorageKey.accessToken, value: accessToken);

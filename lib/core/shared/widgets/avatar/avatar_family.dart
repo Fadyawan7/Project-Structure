@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_template/core/shared/themes/app_colors.dart';
 import 'package:flutter_template/core/shared/themes/app_text_styles.dart';
-import 'package:flutter_template/core/shared/widgets/avatar/avatar_default.dart';
+// import 'package:flutter_template/core/shared/widgets/avatar/avatar_default.dart';
 import 'package:flutter_template/core/shared/widgets/gap.dart';
 import 'package:flutter_template/generated/locale_keys.dart';
 
@@ -24,7 +24,7 @@ class AvatarFamily extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        AvatarDefault(imageUrl: imageUrl, radius: 60),
+        // AvatarDefault(imageUrl: imageUrl, radius: 60),
         const Gap(8),
         Text(
           familyName,

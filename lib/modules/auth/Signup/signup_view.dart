@@ -1,5 +1,4 @@
 // packages
-import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -90,21 +89,7 @@ class SignupView extends StatelessWidget {
                             // Country Code Picker
                             GestureDetector(
                               onTap: () {
-                                showCountryPicker(
-                                  context: context,
-                                  showPhoneCode: true,
-                                  countryListTheme: CountryListThemeData(
-                                    borderRadius: const BorderRadius.only(
-                                      topLeft: Radius.circular(10),
-                                    ),
-                                    inputDecoration: InputDecoration(
-                                      hintText: 'Start typing to search',
-                                      labelText: 'Search',
-                                    ),
-                                  ),
-                                  favorite: ['PK'],
-                                  onSelect: (Country value) {},
-                                );
+                               
                               },
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.28,
