@@ -1,0 +1,21 @@
+include: package:lint/strict.yaml
+
+linter:
+  rules:
+    avoid_classes_with_only_static_members: false
+    use_late_for_private_fields_and_variables: false
+    require_trailing_commas: false
+
+style:
+  line_length: 100
+  indent: 2
+  import_order:
+    - "dart"
+    - "package"
+
+analyzer:
+  exclude:
+    - "**.freezed.dart"
+    - "**.g.dart"
+    - "**.gr.dart"
+    - "**/generated_plugin_registrant.dart"
