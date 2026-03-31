@@ -33,8 +33,6 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-/linux/
-/macos
 build/
 android/app/build/
 ios/Pods/

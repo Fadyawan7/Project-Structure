@@ -22,7 +22,7 @@ flavors:
     app:
       name: "WAVE Live"
     android:
-      applicationId: "prod.wave-driver.com"
+      applicationId: "prod.wave.driver"
       icon: "assets/launcher/launcher_icon.png"
       firebase:
         config: "assets/firebase/production/google-services.json"

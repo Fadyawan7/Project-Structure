@@ -13,7 +13,7 @@ android.apply {
         }
         create("production") {
             dimension = "flavor-type"
-            applicationId = "prod.wave-driver.com"
+            applicationId = "prod.wave.driver"
             resValue(type = "string", name = "app_name", value = "WAVE Live")
         }
     }
